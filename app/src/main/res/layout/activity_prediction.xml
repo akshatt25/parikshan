@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70B6B6B6"
+
+    tools:context=".PredictionActivity">
+
+    <TextView
+
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Image Predictions"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@drawable/round"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:fontFamily="@font/helvetica"
+        android:paddingBottom="5dp"
+        ></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topText"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+
+        android:layout_marginBottom="320dp"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="400dp"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="23dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/grassy"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terrain Type"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textViewPrediction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grassy"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/grassy"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="12dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slipperiness"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/slip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/grassy"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="12dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treacherousness"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grassy"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/grassy"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="12dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surface Stability"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/stab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grassy"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/grassy"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="12dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetation"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/veg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grassy"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/grassy"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="12dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hydration"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/hyd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grassy"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:visibility="visible"
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#120C10"
+        >
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/round">
+
+            <ProgressBar
+
+                android:id="@+id/pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:indeterminateTint="#D7DDD7"
+                android:scaleX="0.8"
+                android:scaleY="0.8">
+
+            </ProgressBar>
+            <TextView
+                android:id="@+id/msg"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:textColor="#D7DDD7"
+
+                android:text="Fetching Data"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

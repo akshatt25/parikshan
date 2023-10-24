@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#120C10"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Terrain Recognition"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="#D7DDD7"
+        android:fontFamily="@font/helvetica"
+        android:background="@drawable/round"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        ></TextView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introText"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="275dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        >
+        <ImageView
+            android:id="@+id/displayImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="400dp"
+            android:src="@drawable/untitled"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/cameraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/uploadAndPredictButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        android:text="Camera"
+        android:fontFamily="@font/helvetica"
+        android:textSize="12sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/round3"
+       />
+
+    <TextView
+        android:id="@+id/galleryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/uploadAndPredictButton"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/helvetica"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:text="Gallery"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textSize="12sp"
+        android:textColor="@color/bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/round3"
+        />
+
+    <TextView
+        android:id="@+id/uploadAndPredictButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Predictions"
+        android:fontFamily="@font/helvetica"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:paddingStart="100dp"
+        android:textStyle="bold"
+        android:paddingEnd="100dp"
+        android:textColor="@color/bg"
+        android:background="@drawable/round3"
+
+         />
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:visibility="gone"
+        android:elevation="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#120C10"
+        >
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/round">
+
+            <ProgressBar
+
+                android:id="@+id/pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:indeterminateTint="#D7DDD7"
+                android:scaleX="0.8"
+                android:scaleY="0.8">
+
+            </ProgressBar>
+            <TextView
+                android:id="@+id/msg"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:textColor="#D7DDD7"
+                android:fontFamily="@font/helvetica"
+                android:text="Uploading Image"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

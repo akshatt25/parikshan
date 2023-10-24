@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "659377862675",
+    "project_id": "parikshan1-445a3",
+    "storage_bucket": "parikshan1-445a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659377862675:android:64ef7c5fac1c206b9827e6",
+        "android_client_info": {
+          "package_name": "com.example.parikshan1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBudW7_Xv6zjYrbWh6Lb9N0kPGnGTKxkcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

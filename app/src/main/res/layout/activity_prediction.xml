@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#70B6B6B6"
+    android:background="#70989898"
 
     tools:context=".PredictionActivity">
 
@@ -34,11 +34,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/topText"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         app:cardCornerRadius="20dp"
 
-        android:layout_marginBottom="320dp"
+        android:layout_marginBottom="340dp"
         >
         <ImageView
             android:id="@+id/imageView"
